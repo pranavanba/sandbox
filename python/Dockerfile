@@ -1,5 +1,3 @@
 FROM python
 
-RUN pip install synapseclient
-
-RUN python -c "import synapseclient; print(synapseclient.__file__)"
+CMD bash synapseclient_install_path.sh
